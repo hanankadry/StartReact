@@ -1,0 +1,45 @@
+footer {
+    padding-top: 40px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    font-size: calc(1.3rem + .6vw);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    border-radius: 50%;
+    border: solid white 1px;
+    width: 55px;
+    height: 55px;
+    transition: 0.3s ease-in-out;
+}
+
+footer li:hover {
+    background-color: white;
+}
+
+footer li a {
+    color: white !important;
+}
+
+footer li:hover a {
+    color: black !important;
+}
+
+footer .rights {
+    margin-top: 60px;
+    background-color: #1a252f !important;
+    color: whtie;
+}
+
+footer .rights p {
+    margin-bottom: 0 !important;
+}

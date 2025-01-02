@@ -1,0 +1,28 @@
+.modal {
+    text-align: center;
+    margin-block: 20px !important;
+}
+
+@media (min-width: 767px) {
+    .modal-dialog {
+        max-width: 60vw !important;
+        margin: auto;
+    }
+}
+
+.modal-content {
+    border-radius: 15px !important;
+}
+
+.modal-body .container {
+    margin: auto !important;
+    max-width: 750px;
+}
+
+.modal-body img {
+    border-radius: 15px;
+}
+
+.modal-footer button {
+    border-radius: 10px !important;
+}

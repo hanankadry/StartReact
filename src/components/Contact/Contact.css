@@ -1,0 +1,44 @@
+.contact {
+    padding-block: 70px;
+}
+
+.contact .form-group {
+    margin-block: 30px;
+}
+
+.contact .form-group:not(:last-child) {
+    border-bottom: solid 1px #c9cbce;
+}
+
+.contact input,
+.contact button[type="submit"],
+.contact textarea {
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    display: block;
+}
+
+.contact input:focus,
+.contact button[type="submit"]:focus,
+.contact textarea:focus {
+    box-shadow: none !important;
+}
+
+.contact textarea {
+    padding-left: 15px !important;
+    resize: none !important;
+    height: 180px !important;
+}
+
+.contact button[type="submit"] {
+    width: fit-content;
+    padding: 20px 30px;
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #18ad90;
+}

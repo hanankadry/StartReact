@@ -1,0 +1,91 @@
+:root {
+    --bg-light: white;
+    --bg-dark: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase !important;
+}
+
+.h1 {
+    font-size: 4rem !important;
+    letter-spacing: 1px !important;
+    font-weight: 900;
+    margin-top: 30px !important;
+}
+
+.h2 {
+    font-size: 3rem !important;
+    font-weight: 600 !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+.h3 {
+    font-size: calc(1.425rem + 2.1vw) !important;
+}
+
+.text-dark {
+    color: var(--bg-dark) !important;
+}
+
+.divider-white,
+.divider-dark {
+    position: relative;
+    text-align: center;
+    margin-block: 10px !important;
+    width: 40px;
+    margin: auto;
+}
+
+.icon-white {
+    display: block;
+    margin: auto;
+    color: var(--bg-light);
+}
+
+.icon-dark {
+    display: block;
+    margin: auto;
+    color: var(--bg-dark);
+}
+
+.divider-white::before,
+.divider-white::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    top: 15px;
+    background-color: var(--bg-light);
+    border-radius: 2px;
+}
+
+.divider-dark::before,
+.divider-dark::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    top: 15px;
+    background-color: var(--bg-dark);
+    border-radius: 2px;
+}
+
+.divider-white::before,
+.divider-dark::before {
+    left: 50px;
+}
+
+.divider-white::after,
+.divider-dark::after {
+    right: 50px;
+}
+
+.divider-white+p,
+.divider-dark+p {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
