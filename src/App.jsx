@@ -15,10 +15,10 @@ import NotFound from "./components/NotFound/NotFound";
 
 const router = createBrowserRouter([
   {
-    path: "/StartReact/",
+    path: "/StartReact",
     element: <Layout />,
     children: [
-      { index: true, element: <Hero /> },
+      { path: "/StartReact", element: <Hero /> },
       { path: "/StartReact/about", element: <About /> },
       { path: "/StartReact/contact", element: <Contact /> },
       { path: "/StartReact/portfolio", element: <Portfolio /> },
