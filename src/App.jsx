@@ -15,13 +15,13 @@ import NotFound from "./components/NotFound/NotFound";
 
 const router = createBrowserRouter([
   {
-    path: "",
+    path: "/StartReact/",
     element: <Layout />,
     children: [
       { index: true, element: <Hero /> },
-      { path: "/about", element: <About /> },
-      { path: "/contact", element: <Contact /> },
-      { path: "/portfolio", element: <Portfolio /> },
+      { path: "/StartReact/about", element: <About /> },
+      { path: "/StartReact/contact", element: <Contact /> },
+      { path: "/StartReact/portfolio", element: <Portfolio /> },
       { path: "*", element: <NotFound /> },
     ],
   },
