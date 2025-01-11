@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-4 mt-5">
               <div className="location">
-                <h4 className="fw-bolder mb-4">Location</h4>
+                <h4 className="fw-bolder mb-3">Location</h4>
                 <p>
                   2215 John Daniel Drive <br />
                   Clark, MO 65243
@@ -19,9 +19,9 @@ export default function Footer() {
             </div>
             <div className="col-lg-4 mt-5">
               <div className="links">
-                <h4 className="fw-bolder mb-5">Around The Web</h4>
+                <h4 className="fw-bolder mb-3">Around The Web</h4>
                 <ul className="d-flex justify-content-center list-unstyled">
-                  <li className="mx-2 d-flex justify-content-center align-items-center">
+                  <li className="mx-1 d-flex justify-content-center align-items-center">
                     <a href="#">
                       <FontAwesomeIcon
                         icon="fa-brands fa-facebook-f"
@@ -30,7 +30,7 @@ export default function Footer() {
                       />
                     </a>
                   </li>
-                  <li className="mx-2 d-flex justify-content-center align-items-center">
+                  <li className="mx-1 d-flex justify-content-center align-items-center">
                     <a href="#">
                       <FontAwesomeIcon
                         icon="fa-brands fa-twitter"
@@ -39,7 +39,7 @@ export default function Footer() {
                       />
                     </a>
                   </li>
-                  <li className="mx-2 d-flex justify-content-center align-items-center">
+                  <li className="mx-1 d-flex justify-content-center align-items-center">
                     <a href="#">
                       <FontAwesomeIcon
                         icon="fa-brands fa-linkedin-in"
@@ -48,10 +48,10 @@ export default function Footer() {
                       />
                     </a>
                   </li>
-                  <li className="mx-2 d-flex justify-content-center align-items-center">
+                  <li className="mx-1 d-flex justify-content-center align-items-center">
                     <a href="#">
                       <FontAwesomeIcon
-                        icon="fa-brands fa-youtube"
+                        icon="fa-solid fa-globe"
                         size="lg"
                         className="social-icon"
                       />
@@ -61,16 +61,16 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-lg-4 mt-5">
-              <h4 className="fw-bolder mb-4">About Freelancer</h4>
-              <p className="fw-bolder">
+              <h4 className="fw-bolder mb-3">About Freelancer</h4>
+              <p>
                 Freelance is a free to use, MIT licensed Bootstrap theme created
-                by Hamza Nouh
+                by Hanan Ibrahim
               </p>
             </div>
           </div>
         </div>
         <div className="rights">
-          <p className="p-4 text-center">Copyright © Hamza Nouh 2022</p>
+          <p className="p-4 text-center">Copyright © Hanan Ibrahim 2025</p>
         </div>
       </footer>
     </>

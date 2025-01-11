@@ -7,7 +7,7 @@ export default function About() {
     <>
       <section className="about" id="about">
         <div className="container">
-          <Title name="About" color="white" textSize="h2" />
+          <Title name="About Component" color="white" textSize="h2" />
           <div className="row justify-content-center">
             <div className="col-md-12 col-lg-4">
               <p className="px-3 text-white">

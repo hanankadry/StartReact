@@ -1,17 +1,18 @@
 import React from "react";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg sticky-top">
+      <nav className="navbar navbar-expand-lg sticky-top py-4">
         <div className="container">
-          <a className="navbar-brand fw-bolder text-uppercase" href="#">
-            Start React
-          </a>
+          <Link className="navbar-brand fw-bolder text-uppercase fs-2 p-0" to="">
+            Start Framework
+          </Link>
           <button
-            className="navbar-toggler p-2"
+            className="navbar-toggler py-2 px-3"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -19,33 +20,24 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            Menu <FontAwesomeIcon icon={"bars"} size="sm" />
+            <FontAwesomeIcon icon={"bars"} size="md" />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a
-                  className="nav-link active fw-bolder my-4 p-3"
-                  aria-current="page"
-                  href="#home"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link fw-bolder my-4 p-3" href="#portfolio">
-                  Portfolio
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link fw-bolder my-4 p-3" href="#about">
+              <li className="nav-item px-0">
+                <NavLink className="nav-link fw-bolder p-2" to="about">
                   About
-                </a>
+                </NavLink>
               </li>
-              <li className="nav-item">
-                <a className="nav-link fw-bolder my-4 p-3" href="#contact">
+              <li className="nav-item px-0">
+                <NavLink className="nav-link fw-bolder p-2" to="portfolio">
+                  Portfolio
+                </NavLink>
+              </li>
+              <li className="nav-item px-0">
+                <NavLink className="nav-link fw-bolder p-2" to="contact">
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

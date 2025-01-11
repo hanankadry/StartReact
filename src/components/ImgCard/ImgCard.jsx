@@ -1,5 +1,5 @@
 import React from "react";
-import "./ImgCard.css";
+import style from "./ImgCard.module.css";
 import Modal from "../Modal/Modal";
 
 export default function ImgCard({ img, index }) {
@@ -7,7 +7,7 @@ export default function ImgCard({ img, index }) {
     <>
       <div className="portfolio-item">
         <div
-          className="img"
+          className={style.img}
           data-bs-toggle="modal"
           data-bs-target={`#index${index}`}
         >

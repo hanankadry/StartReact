@@ -4,25 +4,33 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Portfolio from "./components/Portfolio/Portfolio";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import Modal from "./components/Modal/Modal";
+import Layout from "./components/Layout/Layout";
+import NotFound from "./components/NotFound/NotFound";
+
+const router = createBrowserRouter([
+  {
+    path: "",
+    element: <Layout />,
+    children: [
+      { index: true, element: <Hero /> },
+      { path: "/about", element: <About /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "/portfolio", element: <Portfolio /> },
+      { path: "*", element: <NotFound /> },
+    ],
+  },
+]);
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Portfolio />
-      <About />
-      <Contact />
-      <Footer />
-      <Modal />
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }

@@ -5,9 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Title({ name, color, textSize }) {
   return (
     <>
-      <h1 className={"fw-bolder text-" + color + " " + textSize}>{name}</h1>
-      <div className={"divider-" + color}>
-        <FontAwesomeIcon icon={"star"} size="2xl" className={"icon-" + color} />
+      <div className="text-center pt-4">
+        <h2 className={"text-uppercase fw-bolder fs-1 text-" + color}>{name}</h2>
+        <div className={"divider-" + color}>
+          <FontAwesomeIcon
+            icon={"star"}
+            size="lg"
+            className={"icon-" + color}
+          />
+        </div>
       </div>
     </>
   );

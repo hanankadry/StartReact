@@ -7,7 +7,7 @@ export default function Contact() {
     <>
       <section className="contact" id="contact">
         <div className="container">
-          <Title name="Contact Me" color="dark" textSize="h2" />
+          <Title name="Contact Section" color="dark" textSize="h2" />
           <div className="row">
             <div className="col-lg-8 mx-auto mt-5">
               <div className="form">
@@ -44,7 +44,7 @@ export default function Contact() {
                 </div>
                 <div className="form-group">
                   <button type="submit" className="btn">
-                    Send
+                    Send Message
                   </button>
                 </div>
               </div>

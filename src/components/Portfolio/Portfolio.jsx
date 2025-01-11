@@ -53,8 +53,8 @@ export default function Portfolio() {
     <>
       <section className="portfolio" id="portfolio">
         <div className="container">
-          <Title name="Portfolio" color="dark" textSize="h2" />
-          <div className="row mt-5">
+          <Title name="Portfolio Component" color="dark" textSize="h2" />
+          <div className="row mt-2">
             {images.map((img, i) => (
               <div key={i} className="col-lg-4 col-md-6 col-sm-12 mb-5 px-3">
                 <ImgCard img={img} index={i} />
